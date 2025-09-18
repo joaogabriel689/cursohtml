@@ -32,3 +32,8 @@ h2{
 p{
     text-align: justify;
 }
+
+p:hover{
+    color: blue;
+
+}
