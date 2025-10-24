@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'fonte_projeto';
+    src: url('../fontes/idroid.otf');
+}
+:root{
+    --cor-primaria: #38C020 ;
+    --cor-segundaria:#419632 ;
+    --cor-terciaria:#3E6B36 ;
+
+    --cor-neutra-b:#fff;
+    --cor-neutra-p:#000000 ;
+}
+*{
+    font-family: 'fonte_projeto';
+    padding: 0;
+    margin: 0;   
+}
+header{
+    background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-segundaria), var(--cor-terciaria));
+
+    height: calc(vh-80px);
+}
+#area_titulo h1{
+    font-size: 1.7rem;
+    color: white;
+}
+#area_titulo h2{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: white;
+}
+#area_titulo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+}
+nav ul {
+  list-style: none;          
+  display: flex;             
+  justify-content: left;   
+  gap: 20px;                 
+  padding: 0;
+  padding-bottom: 15px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+nav li {
+  
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-neutra-p);
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s;
+  color: white;
+}
+
+nav a:hover {
+  color: gray;
+  background-color: #2E412B;
+  padding: 10px;
+}
+
+main{
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+
+}
+main h1{
+    color: var(--cor-segundaria);
+    margin: 10px;
+}
+main p{
+    font-size: 13px;
+    margin: 10px;
+}
+main h2{
+    background:linear-gradient(to right, #3E6B36, #60a653, #fff) #3E6B36;
+    color: white;
+    margin: auto;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+.grande{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+.pequena{
+    display: none;
+}
+#img_droid{
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+
+
+}
+iframe{
+    width: 100% ;
+    margin: auto;
+    display: flex;
+}
+body{
+    background-color: beige;
+
+}
+#aprenda_mais{
+    border-radius: 20px;
+    background-color: #56c442af;
+    width: 85%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+#aprenda_mais h3{
+    background-color: #3E6B36;
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 10px;
+    color: white;
+}
+#aprenda_mais ul{
+    list-style-type:none;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    columns: 2;          
+    column-gap: 40px;    
+    list-style-position: inside;
+    margin-bottom: 30px;
+    margin-top: 35px;
+
+
+}
+#curiosidades p#ult{
+    padding-bottom: 15px;
+    
+
+}
+
+footer{
+    background-color: #2E412B;
+    width: 100%;
+    justify-content: center;
+
+}
+footer p{
+    color: white;
+    font-size: 10px;
+
+}
+
+@media (max-widht: 768px) {
+    .grande{
+        display: none;
+
+    }
+    .pequena{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+    
+}
